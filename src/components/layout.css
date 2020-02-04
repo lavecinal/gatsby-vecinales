@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+
+.btn {
+  @apply bg-gray-300  text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center;
+}
+
+.btn:hover {
+  @apply shadow bg-gray-400;
+}
+
+.btn-api {
+  @apply font-sans text-xs bg-blue-500 text-white;
+  position: fixed;
+  top: 65px;
+  right: 20px;
+}
+
+@screen sm {
+  .btn-api {
+    top: 25px;
+  }
+}
+
+article p {
+  @apply my-3;
+}
+
+article p img {
+  @apply py-6;
+}
+
+header .nav a {
+  @apply block mt-0 ml-6 font-bold text-lg;
+}
+
+@screen lg {
+  header nav a {
+    @apply mt-0 inline-block;
+  }
+}
+
+@tailwind utilities;
